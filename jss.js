@@ -75,11 +75,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Moving Text Effect
-        let movingText = document.querySelector(".moving-text");
-        let direction = 1;
-        setInterval(() => {
-            movingText.style.transform = `translateX(${direction * 20}px)`;
-            direction *= -1;
-        }, 1000);
+        setTimeout(() => {
+            let movingText = document.querySelector(".moving-text");
+            let direction = 1;
+            setInterval(() => {
+                movingText.style.transform = `translateX(${direction * 20}px)`;
+                direction *= -1;
+            }, 1000);
+        }, 0);
+
     });
 });
