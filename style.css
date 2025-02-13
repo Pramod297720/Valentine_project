@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #ffe6f0;
+}
+
+/* Side-by-Side Button Layout */
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Funny Moving Yes Button */
+.yes-btn {
+    background-color: #ff66b2;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.yes-btn:hover {
+    transform: scale(1.2) rotate(15deg);
+}
+
+/* Normal No Button */
+.no-btn {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #ff66b2;
+    border-radius: 20px;
+    background-color: white;
+    color: #ff66b2;
+    transition: all 0.3s ease;
+}
+
+.no-btn:hover {
+    background-color: #ff66b2;
+    color: white;
+}
+
+/* 💔 SAD SCREEN EFFECT AFTER NO BUTTON CLICK 💔 */
+.sad-container {
+    text-align: center;
+}
+
+.sad-text {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Makes it look like the screen is broken */
+.blinking-cursor {
+    font-size: 1rem;
+    color: #fff;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
